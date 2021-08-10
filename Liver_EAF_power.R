@@ -79,9 +79,9 @@ y <- rbinom(n0, 1, p0)             # EAF occurrence is sampled from a Binomial
                                    # distribution with p0 = 0.111 and n0 = 5000.
                                    
 # Score performance is simulated using p = P(x = k | y = k), for a given AUC.
-# In other words, 1 - p is the probability of error (either FP or FN) 
-# such that the estimated AUC for L-GrAFT10 and EASE scores are 
-# equal to the observed AUC value. L-GrAFT10 and AUC.EASE, respectively.
+# In other words, 1 - p is the prediction error (= (FP + FN)/n), such that 
+# the estimated AUC for L-GrAFT10 and EASE scores are equal to the observed 
+# AUC value.
 
 # Generating ROC objects for L-GrAFT10 and EASE scores
 
