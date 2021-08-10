@@ -195,7 +195,8 @@ power.roc.test(auc = 0.72, sig.level = 0.05, power = 0.8, kappa = (1 - 0.10)/0.1
 # 3.36% of cases belong to class 5
 p5 <- 0.0336
 
-# Considering a minimum required AUC of 0.70 to be achieved for class 5:
+# Considering a minimum required AUC of 0.70 to be achieved for every class
+# (including class 5):
 
 power.roc.test(auc = 0.70, sig.level = 0.05, power = 0.8, kappa = (1 - p5)/p5)
 #         ncases = 16.14696
@@ -204,6 +205,5 @@ power.roc.test(auc = 0.70, sig.level = 0.05, power = 0.8, kappa = (1 - p5)/p5)
 #      sig.level = 0.05
 #          power = 0.8
 #              n = 16.14696 + 464.4174 = 480.5644   (> 480 subjects)
-
 
 
