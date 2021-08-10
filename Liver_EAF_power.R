@@ -175,7 +175,7 @@ power.roc.test(auc = 0.72, sig.level = 0.05, power = 0.8, kappa = (1 - 0.07)/0.0
 #            auc = 0.72
 #      sig.level = 0.05
 #          power = 0.8
-#             n1 = 13.79953 + 183.3367 = 197.1362    (~ 200 subjects)
+#             n2 = 13.79953 + 183.3367 = 197.1362    (~ 200 subjects)
 
 # Stratum 3 (high-risk deceased donors), 10% EAF
 power.roc.test(auc = 0.72, sig.level = 0.05, power = 0.8, kappa = (1 - 0.10)/0.10)
@@ -184,7 +184,7 @@ power.roc.test(auc = 0.72, sig.level = 0.05, power = 0.8, kappa = (1 - 0.10)/0.1
 #            auc = 0.72
 #      sig.level = 0.05
 #          power = 0.8
-#             n1 = 14.22835 + 128.0552 = 142.2836    (~ 142 subjects)
+#             n3 = 14.22835 + 128.0552 = 142.2836    (~ 142 subjects)
 
 
 
