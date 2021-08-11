@@ -10,26 +10,31 @@
 
 
 
-
 ## Priors
 
-# Incidence of EAF at 90 days: 11.1% (derivation set)         [1]
+# EAF incidence:
+# Incidence of Early Allograft Failure (EAF) according to the L-GrAFT study (2018): 11.1%  [1];
+# Incidence of EAF according to the EASE score study: 6.7%  [2];
+# Incidence of EAF according to the L-GrAFT validation study (2020) in UCLA: 7%  [4];
+# Incidence of EAF according to the L-GrAFT validation study (2020) in other US validation CENTERS: 11%  [4];
+# Incidence of EAF according to the L-GrAFT validation study (2020) in European COPE cohort: 4%  [4];
+# Notably, the COPE cohort consists of 222 grafts.
+# 
+# Research hypothesis stratified by donor type:
+#      3% EAF in liver transplantation with living donors;
+#      7% EAF in liver transplantation with standard deceased donors;
+#     10% EAF in liver transplantation with high-risk deceased donors.
 
-# Incidence of EAF stratified by donor:
-# - Liver transplantation from standard deceased donors:       7%
-# - Liver transplantation from high-risk deceased donors:  10-12%
-# - Liver transplantation from living donors:                3-4%
-
-# Direct comparison EASE vs. L-GrAFT10:
-# -      AUC(EASE) = 0.87 (0.83, 0.91)                        [2,3]
-# - AUC(L-GrAFT10) = 0.72 (0.65, 0.78)                        [2,3]
-
-# L-GrAFT7 C stat. = 0.78 (0.75, 0.82)                          [4]
+# EASE and L-GrAFT score performance as AUC (95% confidence interval)
+#     EASE(10) AUC = 0.87 (0.83, 0.91)  [2,3]
+#    L-GrAFT10 AUC = 0.72 (0.65, 0.78)  [2,3]
+#     L-GrAFT7 AUC = 0.78 (0.75, 0.82)  [4]
 
 # [1] Agopian VG et al. 2017; JAMA Surgery.
 # [2] Avolio AW et al. 2021; Journal of Hepatology (Letter to the Editor).
 # [3] Avolio AW et al. 2020; JAMA Surgery.
 # [4] Agopian VG et al. 2021; Journal of Hepatology.
+
 
 # R
 
