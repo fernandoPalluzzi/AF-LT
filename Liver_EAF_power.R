@@ -67,9 +67,9 @@ randSwitch <- function(x, p) {
 
 ### Simulation A-1. EASE vs. L-GrAFT10.
 
-# - Incidence of EAF (p0) = 11.1%   [1]
-# - L-GrAFT10 score AUC = 0.72      [2]
-# - EASE score AUC = 0.87           [2]
+# - Incidence of EAF (p0) = 11.1%   [1,4]
+# - L-GrAFT10 score AUC = 0.72      [2,3]
+# - EASE score AUC = 0.87           [2,3]
 
 # Goal.
 # To maintain (or improve) EASE score performance (AUC) at day 7 
@@ -111,15 +111,14 @@ power.roc.test(roc0, roc1, sig.level = 0.05, power = 0.8)
 
 ### Simulation A-2. EASE vs. L-GrAFT7.
 
-# - Incidence of EAF (p0) = 11.1%   [1]
-# - L-GrAFT7 score AUC = 0.78       [1,3]
-# - EASE score AUC = 0.87           [2]
+# - Incidence of EAF (p0) = 11.1%   [1,4]
+# - L-GrAFT7 score AUC = 0.78         [4]
+# - EASE score AUC = 0.87           [2,3]
 
 # Goal.
 # To maintain (or improve) EASE score performance (AUC) at day 7 
-# of follow-up, rather than day 10, considering L-GrAFT7 as a baseline.
-# This study takes into consideration the performances of the baseline 
-# score to have a reference AUC at day 7.
+# of follow-up, rather than day 10 (current lower boundary), 
+# considering L-GrAFT7 (AUC = 0.78) as a baseline.
 
 set.seed(123)
 
@@ -131,10 +130,10 @@ y <- rbinom(n0, 1, p0)             # EAF occurrence is sampled from a Binomial
 
 # Generating ROC objects for L-GrAFT7 and EASE scores
 
-x0 <- randSwitch(y, p = 0.765)     # AUC0.L-GrAFT7 = 0.78 (baseline) [2]
+x0 <- randSwitch(y, p = 0.765)     # AUC.L-GrAFT7 = 0.78 (baseline) [4]
 roc0 <- roc(y, x0)
 
-x1 <- randSwitch(y, p = 0.872)     # AUC.EASE = 0.87 [2]
+x1 <- randSwitch(y, p = 0.872)     # AUC.EASE = 0.87 [2,3]
 roc1 <- roc(y, x1)
 
 # Sample size calculation (based on deLong test)
