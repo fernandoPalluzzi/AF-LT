@@ -1,6 +1,6 @@
-# Early Allograft Failure (EAF) in Liver Transplantation (LT)
+# Allograft Failure (AF) in Liver Transplantation (LT)
 
-Sample size estimation and validation for EASE and L-GrAFT scores in the prevention and treatment of EAF in liver transplantation.
+Sample size estimation and validation for EASE and L-GrAFT scores in the prevention and treatment of AF in liver transplantation.
 
 ## Requirements
 
